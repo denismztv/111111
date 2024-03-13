@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | SkiGear</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/logo/logo-favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-container section">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo/logo.png" alt="">
+                </a>
+            </div>
+
+            <nav>
+                <a href="pages/katalog.html">Каталог</a>
+                <a href="#kat">Категории</a>
+                <a href="#pop">Популярные товары</a>
+                <a href="#!">О нас</a>
+            </nav>
+
+            <div class="menu">
+                <a href="#openModal">
+                    <img src="assets/image/header/Icon-bag.png" alt="">
+                </a>
+
+                <a href="#!">
+                    <img src="assets/image/header/Icon-search.png" alt="">
+                </a>
+
+                <!-- <a href="#!">
+                    <img src="assets/image/header/menu.png" alt="" class="icon-menu">
+                </a> -->
+
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="pages/katalog.html">Каталог</a></li>
+                        <li><a class="menu__item" href="#kat">Категории</a></li>
+                        <li><a class="menu__item" href="#pop">Популярные товары</a></li>
+                        <li><a class="menu__item" href="#!">О нас</a></li>
+                        <li><a class="menu__item" href="#footer">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- Модальное окно -->
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="p-modal-title">Корзина</p>
+                    <a href="#close" title="Close" class="close">
+                        <img src="../assets/image/modal/icons/Icon-close-circle.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-cards">
+                        <div class="modal-body-card">
+                            <div class="modal-body-card-noclouse">
+                                <img src="../assets/image/modal/modal-cards-img1.png" alt="">
+
+                                <div class="modal-body-card-text">
+                                    <p class="p-modal-card-zag">Утепленная куртка мужская <br> <br>
+                                    </p>
+
+                                    <div class="p-modal-card-podzag">
+                                        Цвет: <span class="span-modal-bold">темно-синий</span>
+                                    </div>
+
+                                    <div class="p-modal-card-podzag">
+                                        Размер: <span class="span-modal-bold">S</span>
+                                    </div>
+
+                                    <div class="modal-card-kolvo-price">
+                                        <div class="modal-card-kolvo">
+                                            <p class="p-modal-card-kolvo">-</p>
+                                            <p class="p-modal-card-kolvo">1</p>
+                                            <p class="p-modal-card-kolvo">+</p>
+                                        </div>
+
+                                        <p class="p-modal-card-price">9 990 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="../assets/image/modal/icons/Icon-close-circle-black.png" alt=""
+                                class="modal-body-card-clouse">
+                        </div>
+
+                        <div class="modal-body-card">
+                            <div class="modal-body-card-noclouse">
+                                <img src="../assets/image/modal/modal-cards-img2.png" alt="">
+
+                                <div class="modal-body-card-text">
+                                    <p class="p-modal-card-zag">Ботинки мужские Tweng Demi Nylon
+                                    </p>
+
+                                    <div class="p-modal-card-podzag">
+                                        Цвет: <span class="span-modal-bold">коричневый</span>
+                                    </div>
+
+                                    <div class="p-modal-card-podzag">
+                                        Размер: <span class="span-modal-bold">42</span>
+                                    </div>
+
+                                    <div class="modal-card-kolvo-price">
+                                        <div class="modal-card-kolvo">
+                                            <p class="p-modal-card-kolvo">-</p>
+                                            <p class="p-modal-card-kolvo">2</p>
+                                            <p class="p-modal-card-kolvo">+</p>
+                                        </div>
+
+                                        <p class="p-modal-card-price">13 980 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="../assets/image/modal/icons/Icon-close-circle-black.png" alt=""
+                                class="modal-body-card-clouse">
+                        </div>
+                    </div>
+
+                    <div class="line-modal"></div>
+
+                    <div class="modal-body-itog">
+                        <p class="p-modal-itog-zag">ВАШ ЗАКАЗ</p>
+                        <div class="modal-itog-podzag">
+                            <div class="p-modal-itog-podzag">Товары, 3 шт.</div>
+                            <div class="p-modal-itog-podzag">23 880 ₽ </div>
+                        </div>
+                        <div class="modal-itog-podzag">
+                            <div class="p-modal-itog">Итого</div>
+                            <div class="p-modal-itog">23 880 ₽ </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-body-btn">
+                        <a href="#!">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Модальное окно -->
+
+    <!-- banner -->
+    <div class="banner">
+        <h1>Уверенность и комфорт <br>
+            с <span class="span-orange">SKIGEAR</span>
+        </h1>
+        <a href="#pop">
+            <div class="arrow-down">
+                <img src="assets/image/glav/banner/Icon-arrow-down.png" alt="">
+                <img src="assets/image/glav/banner/Icon-arrow-down.png" alt="">
+                <img src="assets/image/glav/banner/Icon-arrow-down.png" alt="">
+            </div>
+        </a>
+    </div>
+    <!-- banner -->
+
+
+    <!-- popular -->
+    <div class="pop" id="pop">
+        <div class="pop-container section py120">
+            <div class="title">
+                <h2>Популярные товары</h2>
+            </div>
+
+            <div class="pop-cards">
+
+                <div class="pop-card">
+                    <img src="assets/image/glav/popular/pop-img1.png" alt="">
+
+                    <div class="p-pop">Утепленная куртка мужская</div>
+
+                    <a href="pages/odin.html" class="pop-btn">9 990 ₽</a>
+                </div>
+
+                <div class="pop-card">
+                    <img src="assets/image/glav/popular/pop-img2.png" alt="">
+
+                    <div class="p-pop">Ботинки мужские Wels Mid 2</div>
+
+                    <a href="pages/odin.html" class="pop-btn">4 790 ₽</a>
+                </div>
+
+                <div class="pop-card">
+                    <img src="assets/image/glav/popular/pop-img3.png" alt="">
+
+                    <div class="p-pop">Носки, 2 пары <br>
+                        <br>
+                    </div>
+
+                    <a href="pages/odin.html" class="pop-btn">990 ₽</a>
+                </div>
+
+                <div class="pop-card">
+                    <img src="assets/image/glav/popular/pop-img4.png" alt="">
+
+                    <div class="p-pop">Термос, 0.75 л <br><br>
+                    </div>
+
+                    <a href="pages/odin.html" class="pop-btn">1 990 ₽</a>
+                </div>
+            </div>
+
+            <div class="pop-btn2">
+                <a href="pages/katalog.html">Показать еще</a>
+            </div>
+        </div>
+    </div>
+    <!-- popular -->
+
+
+    <!-- kategory -->
+    <div class="kat" id="kat">
+        <div class="kat-container section py120">
+            <div class="title">
+                <h2>Категории</h2>
+            </div>
+
+            <div class="kat-blocks">
+                <a href="pages/katalog.html">
+                    <div class="kat-block">
+                        <img src="assets/image/glav/kategory/kat-img1.png" alt="">
+                        <p class="p-kat">Одежда</p>
+                    </div>
+                </a>
+
+                <a href="pages/katalog.html">
+                    <div class="kat-block">
+                        <img src="assets/image/glav/kategory/kat-img2.png" alt="">
+                        <p class="p-kat">Шапки, перчатки</p>
+                    </div>
+                </a>
+
+                <a href="pages/katalog.html">
+                    <div class="kat-block">
+                        <img src="assets/image/glav/kategory/kat-img3.png" alt="">
+                        <p class="p-kat">Палки</p>
+                    </div>
+                </a>
+
+
+                <a href="pages/katalog.html">
+                    <div class="kat-block">
+                        <img src="assets/image/glav/kategory/kat-img4.png" alt="">
+                        <p class="p-kat">Ботинки</p>
+                    </div>
+                </a>
+
+
+                <a href="pages/katalog.html">
+                    <div class="kat-block">
+                        <img src="assets/image/glav/kategory/kat-img5.png" alt="">
+                        <p class="p-kat">Защита</p>
+                    </div>
+                </a>
+
+
+                <a href="pages/katalog.html">
+                    <div class="kat-block">
+                        <img src="assets/image/glav/kategory/kat-img6.png" alt="">
+                        <p class="p-kat">Лыжи</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- kategory -->
+
+
+    <!-- rassilka -->
+    <div class="ras" id="ras">
+        <div class="ras-container section">
+            <div class="ras-text">
+                <h3>Подпишитесь на наши новости</h3>
+                <p class="p-ras">
+                    Будем писать не чаще раза в месяц с подборкой новинок и специальных предложений
+                </p>
+            </div>
+
+            <div class="ras-forma">
+                <input type="text" name="email" placeholder="E-mail" class="ras-input">
+
+                <div class="ras-btn">
+                    <a href="#!">Подписаться</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rassilka -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-container section">
+            <div class="nav-soc">
+                <div class="nav-footer">
+                    <a href="#!">О нас</a>
+                    <a href="pages/katalog.html">Каталог</a>
+                    <a href="#!">Технологии</a>
+                    <a href="#pop">Популярные товары</a>
+                    <a href="#!">Адреса магазинов</a>
+                    <a href="#!">Уход за вещами</a>
+                    <a href="#!">Пользовательское соглашение</a>
+                </div>
+
+                <div class="soc-footer">
+                    <div class="footer-number">
+                        <a href="tel:+7800771717">8 (800) 777-17-17</a>
+                        <div class="footer-number-time">24/7</div>
+                    </div>
+
+                    <a href="mailto:support@skigear.com">support@skigear.com</a>
+
+                    <div class="soc-icons">
+                        <a href="#!">
+                            <img src="assets/image/footer/Icon-pinterest.png" alt="">
+                        </a>
+                        <a href="#!">
+                            <img src="assets/image/footer/Icon-vk.png" alt="">
+                        </a>
+                        <a href="#!">
+                            <img src="assets/image/footer/Icon-tg.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-line"></div>
+
+            <div class="reserved">
+                <h4>© 2024, SKIGEAR</h4>
+
+                <p class="p-footer-reserved-unvis">
+                    Мазитов Денис, студент 326 ВЕБ группы.
+                </p>
+
+                <p class="p-footer-reserved-vis">
+                    Мазитов Денис, студент 326 ВЕБ группы. Далее идет текст рыба :) Обратите внимание, что
+                    представленная на сайте информация не является исчерпывающей. Сведения о ценах и представленных
+                    моделях, содержащиеся на данном сайте, носят исключительно информационный и сравнительный характер и
+                    могут быть изменены в любое время без предварительного уведомления потребителей. Информацию об
+                    адресах магазинов, наличия товаров и их стоимости уточняйте на...
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>
